@@ -1,8 +1,10 @@
 export default function SketchItem({sketch}) {
     return (
         <div className="border rounded-lg p-4">
-            <p className="text-xl font-Georgia font-medium">{sketch.name}</p>
-            <p className="text-gray-700">{sketch.year}</p>
+            <img src={sketch.imgUrl}className=""></img>
+            <p className="text-md font-Georgia font-medium">{sketch.title}</p>
+            <p className="font-light text-sm text-gray-700">{sketch.medium}</p>
+            <p className="font-light italic text-sm text-gray-700">{sketch.size}</p>
 
         </div>
     );

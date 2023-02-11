@@ -2,59 +2,59 @@ export default function handler(req,res) {
     const sketches =[
         {
             id: "Podil",
-            title: "Kontraktova square of Podil",
-            year: "2016",
+            title: "Kontraktova square",
+            medium: "Watercolour and ink",
             size: "29 x 21 cm",
-            imgUrl:""
+            imgUrl:"/assets/podil.jpeg"
         },
         {
             id: "Mogylianka",
             title: "Kyiv-Mohyla Academy",
-            year: "2016",
+            medium: "Watercolour and ink",
             size: "21 x 29 cm",
-            imgUrl:""
+            imgUrl:"/assets/mogylianka.jpeg"
         },
         {
             id: "NebesnaSotnia",
             title: "Nebesna Sotnia square",
-            year: "2016",
+            medium: "Watercolour and ink",
             size: "29 x 21 cm",
-            imgUrl:""
+            imgUrl:"/assets/apricot.jpeg"
         },
         {
             id: "HouseofBaron",
             title: "House of Baron",
-            year: "2016",
+            medium: "Watercolour and ink",
             size: "21 x 29 cm",
-            imgUrl:""
+            imgUrl:"/assets/yarval.jpeg"
         },
         {
             id: "Andriivka",
             title: "Andriivska church",
-            year: "2016",
+            medium: "Watercolour and ink",
             size: "29 x 21 cm",
-            imgUrl:""
+            imgUrl:"/assets/andriivska.jpeg"
         },
         {
             id: "Gossips in May",
             title: "Gossips in May",
-            year: "2016",
+            medium: "Watercolour and ink",
             size: "21 x 29 cm",
-            imgUrl:""
+            imgUrl:"/assets/fountain.jpeg"
         },
         {
             id: "SaintSofia",
             title: "The Belltower of St Sofia Cathedral",
-            year: "2016",
+            medium: "Watercolour and ink",
             size: "29 x 21 cm",
-            imgUrl:""
+            imgUrl:"/assets/sofia.jpeg"
         },
         {
             id: "Cafe",
-            title: "A cafe on the St Sofia Cathedral square",
-            year: "2016",
+            title: "A cafe on St Sofia Cathedral square",
+            medium: "Watercolour and ink",
             size: "29 x 21 cm",
-            imgUrl:""
+            imgUrl:"/assets/cafe.jpeg"
         },
     ];
 

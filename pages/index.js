@@ -10,7 +10,7 @@ export default function Home() {
 
     <Content></Content>
 
-    <Footer href="/sketches" title="Sketches" />
+    <Footer href="/sketches" title="See Sketches" />
     
     </div>
   )

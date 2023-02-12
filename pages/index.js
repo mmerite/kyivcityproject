@@ -1,4 +1,5 @@
-import Hero from "@/components/hero";
+import Topics from "@/components/home/topics";
+import Hero from "@/components/home/hero";
 import Content from "@/components/shared/Content";
 import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header";
@@ -11,10 +12,13 @@ export default function Home() {
 
     <Hero
       imgUrl="/assets/profile_1.jpeg" 
-      subtitle="Hi I am Maria"/>
+      subtitle="Hi! I am Maria"/>
 
 
     <Content>
+      <div className="w-full flex flex-col">
+        <Topics/>
+      </div>
     </Content>
 
     <Footer href="/sketches" title="See Sketches" />

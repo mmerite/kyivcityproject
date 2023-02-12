@@ -13,8 +13,10 @@ export default function SketchPage() {
                     <SketchGrid></SketchGrid>
                 </div>
             </Content>
-
+            
+            
             <Footer href="/" title="Return Home" />
+            
 
         </div>
     );

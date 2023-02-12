@@ -10,8 +10,9 @@ export default function Home() {
     <Header name ="MeriteWatercolour"/>
 
     <Hero
-      imgUrl="" 
-      bio="Hi I am Maria"/>
+      imgUrl="/assets/profile_1.jpeg" 
+      subtitle="Hi I am Maria"/>
+
 
     <Content>
     </Content>

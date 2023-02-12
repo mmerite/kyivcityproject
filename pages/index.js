@@ -12,16 +12,18 @@ export default function Home() {
 
     <Hero
       imgUrl="/assets/profile_1.jpeg" 
-      subtitle="Hi! I am Maria"/>
+      subtitle="Hi! I am Maria,"/>
 
 
     <Content>
       <div className="w-full flex flex-col">
-        <Topics/>
+        <Topics 
+        imgUrl="/assets/fountain.jpeg"/>
+      
       </div>
     </Content>
 
-    <Footer href="/sketches" title="What is next?" />
+    <Footer href="/sketches" title="See what is next?" />
     
     </div>
   )

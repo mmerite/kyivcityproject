@@ -9,8 +9,8 @@ export default function Hero({name, subtitle, imgUrl}) {
                     <img src={imgUrl} className="rounded-lg"></img>
                 </div>
 
-                <div className="w-6/12">
-                    <p className="indent-6 text-xl text-gray-700">{subtitle}</p>
+                <div className="w-8/12">
+                    <p className="text-xl text-gray-700">{subtitle}</p>
                     
                     <Bio className="text-left"></Bio>
                 </div>

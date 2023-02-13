@@ -12,7 +12,7 @@ export default function Home() {
 
     <Hero
       imgUrl="/assets/profile_1.jpeg" 
-      subtitle="Hi! I am Maria,"/>
+      subtitle="Hi! I am Maria"/>
 
 
     <Content>
@@ -23,7 +23,7 @@ export default function Home() {
       </div>
     </Content>
 
-    <Footer href="/sketches" title="See what is next?" />
+    <Footer href="/sketches" title="What is next?" />
     
     </div>
   )

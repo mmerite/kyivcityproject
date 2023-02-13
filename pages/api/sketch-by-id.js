@@ -1,5 +1,5 @@
 export default function handler(req,res) {
-    const { id } = req.query; // this is backend endpoint so no router
+    const id = req.query.id; // this is backend endpoint so no router
     
     const sketches =[
         {

@@ -1,4 +1,5 @@
 import Header from "@/components/shared/header";
+import Footer from "@/components/shared/footer";
 import { useRouter } from "next/router"
 import { useEffect,useState } from "react";
 import SketchSingle from "@/components/sketch-single";
@@ -35,10 +36,20 @@ export default function SingleSketch(){
             <Header name={sketch.title} />
             <SketchSingle
                 imgUrl={sketch.imgUrl}
+                title={sketch.title}
                 medium={sketch.medium}
                 size={sketch.size}
-                description={sketch.description}>
-            </SketchSingle>
+                description={sketch.description}
+            />
+
+            <Footer className="flex flex-row"
+            title="Next sketch"
+            href={`/single-sketch/${+sketchId + 1}`}
+//
+            //title2="Previous sketch"
+            //href2={`/single-sketch/${+//sketchId - 1}`}
+            />
+
         </div>
     )
 }

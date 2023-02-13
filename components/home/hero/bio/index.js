@@ -14,7 +14,7 @@ export default function Bio() {
              <p className="indent-6 font-light text-gray-500 whitespace-pre-line"> I was part of Urban Sketchers Ukraine group and was deeply in love with outdour painting. It was the best way to capture the mood of a day and the atmosphere of a place. {'\n'} {'\n'}
              </p>
 
-             <p className="indent-6 font-light text-gray-500 whitespace-pre-line">I loved my home city. This is how my Kyiv sketches project was born.{'\n'} {'\n'}
+             <p className="indent-6 font-light text-gray-500 whitespace-pre-line">I loved my home city. This is how my Kyiv sketches project was born back in 2016.
              </p>
 
             

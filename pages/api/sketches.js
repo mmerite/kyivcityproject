@@ -1,8 +1,14 @@
 import sql from "@/utils/postgres";
 
-export default function handler(req,res) {
+export default async function handler(req,res) {
 
-    const sketches =[
+        const sketches = await sql`
+            SELECT * from sketches
+        `;
+// sql command always returns an array
+// use backticks
+
+   /* const sketches =[
         {
             id: "1",
             title: "Kontraktova square",
@@ -59,7 +65,7 @@ export default function handler(req,res) {
             size: "29 x 21 cm",
             imgUrl:"/assets/cafe.jpeg"
         },
-    ];
+    ]; */
 
     res.json(sketches);
 }

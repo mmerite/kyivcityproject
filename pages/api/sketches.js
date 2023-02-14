@@ -1,4 +1,7 @@
+import sql from "@/utils/postgres";
+
 export default function handler(req,res) {
+
     const sketches =[
         {
             id: "Podil",
@@ -19,42 +22,42 @@ export default function handler(req,res) {
             title: "Nebesna Sotnia square",
             medium: "Watercolour and ink",
             size: "29 x 21 cm",
-            imgUrl:"/assets/apricot.jpeg"
+            img_url:"/assets/apricot.jpeg"
         },
         {
             id: "HouseofBaron",
             title: "House of Baron",
             medium: "Watercolour and ink",
             size: "21 x 29 cm",
-            imgUrl:"/assets/yarval.jpeg"
+            img_url:"/assets/yarval.jpeg"
         },
         {
             id: "Andriivka",
             title: "Andriivska church",
             medium: "Watercolour and ink",
             size: "29 x 21 cm",
-            imgUrl:"/assets/andriivska.jpeg"
+            img_url:"/assets/andriivska.jpeg"
         },
         {
             id: "Gossips in May",
             title: "Gossips in May",
             medium: "Watercolour and ink",
             size: "21 x 29 cm",
-            imgUrl:"/assets/fountain.jpeg"
+            img_url:"/assets/fountain.jpeg"
         },
         {
             id: "SaintSofia",
             title: "The Belltower of St Sofia Cathedral",
             medium: "Watercolour and ink",
             size: "29 x 21 cm",
-            imgUrl:"/assets/sofia.jpeg"
+            img_url:"/assets/sofia.jpeg"
         },
         {
             id: "Cafe",
             title: "A cafe on St Sofia Cathedral square",
             medium: "Watercolour and ink",
             size: "29 x 21 cm",
-            imgUrl:"/assets/cafe.jpeg"
+            img_url:"/assets/cafe.jpeg"
         },
     ];
 

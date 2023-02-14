@@ -42,12 +42,11 @@ export default function SingleSketch(){
                 description={sketch.description}
             />
 
+            <Content></Content>
+
             <Footer className="flex flex-row"
             title="Next sketch"
             href={`/single-sketch/${+sketchId + 1}`}
-//
-            //title2="Previous sketch"
-            //href2={`/single-sketch/${+//sketchId - 1}`}
             />
 
         </div>

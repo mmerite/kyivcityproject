@@ -35,14 +35,14 @@ export default function SingleSketch(){
         <div className="w-full">
             <Header name={sketch.title} />
             <SketchSingle
-                imgUrl={sketch.imgUrl}
+                imgUrl={sketch.img_url}
                 title={sketch.title}
                 medium={sketch.medium}
                 size={sketch.size}
                 description={sketch.description}
             />
 
-            <Content></Content>
+           
 
             <Footer className="flex flex-row"
             title="Next sketch"

@@ -1,7 +1,26 @@
-export default function handler(req,res) {
-    const id = req.query.id; // this is backend endpoint so no router
+import sql from "@/utils/postgres";
+
+export default async function handler(req,res) {
+    const id = req.query.id; // this is backend endpoint so no router. we take here id from a query parameter
     
-    const sketches =[
+    const sketches = await sql`
+    select * from sketches
+    where id = ${id}` // using interpolation because of backticks
+
+    //below is sanity check
+    if (sketches.length <1 ) {
+        res.status(404).json({ message: "Sketch not found"});
+        return;
+    }
+
+    const foundSketch = sketches[0]; // to get a first sketch in that array
+
+    res.json( {sketch: foundSketch});
+}
+
+
+
+/*    const sketches =[
         {
             id: "1",
             title: "Kontraktova square",
@@ -9,6 +28,7 @@ export default function handler(req,res) {
             size: "29 x 21 cm",
             imgUrl:"/assets/podil.jpeg",
             description:"hjhkjhk jkklj"
+
         },
         {
             id: "2",
@@ -61,8 +81,8 @@ export default function handler(req,res) {
             size: "29 x 21 cm",
             imgUrl:"/assets/cafe.jpeg"
         },
-    ];
-//array.prototype.find() - to serach for the particular matching Id 
+    ]; */
+/* array.prototype.find() - to serach for the particular matching Id 
     const foundSketch = sketches.find((sketch) => {
         if (sketch.id === id) {
             return true;
@@ -70,7 +90,5 @@ export default function handler(req,res) {
         else {
             return false;
         }
-    });
+    }); */
 
-    res.json( {sketch: foundSketch});
-}

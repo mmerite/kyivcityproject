@@ -2,11 +2,18 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function SketchItem({sketch}) {
-    const [likes, setLikes] = useState(0);
+    const [likes, setLikes] = useState(+sketch.likes);
 
-    const handleLike = () => {
+    // in handleLike function we need to connect to an api endpoint increase-likes
+    const handleLike = async () => {
         let newLikes = likes + 1;
         setLikes(newLikes);
+
+        const id = +sketch.id;
+        const response = await fetch(`/api/increase-likes?id=${id}&likes=${newLikes}`)
+        const data = await response.json();
+        
+        
     }
 
     return (

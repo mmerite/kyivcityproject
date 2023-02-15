@@ -5,6 +5,8 @@ export default async function handler(req,res) {
         const sketches = await sql`
             SELECT * from sketches
         `;
+    res.json(sketches);
+}
 // sql command always returns an array
 // use backticks
 
@@ -66,6 +68,3 @@ export default async function handler(req,res) {
             imgUrl:"/assets/cafe.jpeg"
         },
     ]; */
-
-    res.json(sketches);
-}

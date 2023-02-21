@@ -43,12 +43,17 @@ export default function SingleSketch(){
             />
 
            
+            <div className="w-full flex flex-row justify-center"> 
+                <Footer href="/" title="Return Home"/>
 
-            <Footer className="flex flex-row"
-            title="Next sketch"
-            href={`/single-sketch/${+sketchId + 1}`}
-            />
+                <Footer className=""
+                title="Next sketch"
+                href={`/single-sketch/${+sketchId + 1}`}
+                />
 
+                <Footer href="/sketches" title="Return to sketches"/>
+               
+            </div>
         </div>
     )
 }

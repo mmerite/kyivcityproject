@@ -22,8 +22,6 @@ export default function Home() {
       
       </div>
     </Content>
-
-    <Footer href="/sketches" title="What is next?" />
     
     </div>
   )

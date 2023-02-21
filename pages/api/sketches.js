@@ -4,6 +4,7 @@ export default async function handler(req,res) {
 
         const sketches = await sql`
             SELECT * from sketches
+            ORDER BY id ASC;
         `;
     res.json(sketches);
 }

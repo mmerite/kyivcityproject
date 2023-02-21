@@ -1,7 +1,7 @@
 export default function Bio() {
     return (
         <div className="w-full max-w-6xl mx-auto mt-8">
-             <p className="indent-6 font-light text-gray-500 whitespace-pre-line"> I lived and worked in Kyiv, Ukraine, until April 2022. Before the war I saw the world with the amusement of a child, and it fascinated me to a such extent that I could not help materializing it in a some form, 
+             <p className="indent-6 font-light text-gray-500 whitespace-pre-line"> A Ukrainian who has been living in Manchester since April 2022. Before the war I saw the world with the amusement of a child, and it fascinated me to such an extent that I could not help materializing it in a some form, 
              either visual (watercolouring and graphic drawing), or physical (dancing), or audible (singing).{'\n'} {'\n'}
             </p>
 

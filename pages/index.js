@@ -12,7 +12,7 @@ export default function Home() {
 
     <Hero
       imgUrl="/assets/profile_1.jpeg" 
-      subtitle="Hi! I am Maria"/>
+      subtitle="Hi! I am Maria,"/>
 
 
     <Content>

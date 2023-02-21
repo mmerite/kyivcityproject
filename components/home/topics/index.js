@@ -4,7 +4,7 @@ export default function Topics({imgUrl}) {
     return (
         <div className="w-full flex flex-col-2">
             <div className="w-5/12 flex flex-col py-4 max-w-sm" >
-                <h3 className="text-xl text-gray-700 py-4 mx-auto">
+                <h3 className="text-xl text-gray-700 mt-15 py-5 mx-auto">
                     Why I loved urban sketching?
                 </h3>
 

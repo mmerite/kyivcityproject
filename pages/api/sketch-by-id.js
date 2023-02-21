@@ -8,7 +8,7 @@ export default async function handler(req,res) {
     where id = ${id}` // using interpolation because of backticks
 
     //below is sanity check
-    if (sketches.length <1 ) {
+    if (sketches.length <1) {
         res.status(404).json({ message: "Sketch not found"});
         return;
     }

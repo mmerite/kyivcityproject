@@ -1,6 +1,6 @@
 import Bio from "./bio";
 
-export default function Hero({name, subtitle, imgUrl}) {
+export default function Hero({subtitle, imgUrl}) {
     return (
         <div className="w-full max-w-6xl mx-auto mt-8">
             <div className="w-full flex flex-row-2 space-x-24 py-4">

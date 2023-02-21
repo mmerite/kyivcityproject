@@ -18,8 +18,11 @@ export default async function handler(req,res) {
     update sketches
     set likes = ${likes}
     where id = ${id}
-    
     `;
+   /* const sketches2 = await sql`
+    select * from sketches
+    order by id
+    `; */
 
     res.json({message: "Number of likes updated"})
 }

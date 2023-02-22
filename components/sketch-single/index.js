@@ -7,7 +7,7 @@ export default function SketchSingle({imgUrl, title, medium, size, description})
                     <img src={imgUrl} className="object-contain aspect-[4/4] rounded-lg"></img>
                 </div>
 
-                <div className="w-5/12 py-4 mt-28">
+                <div className="w-5/12 py-4 mt-40">
                     <h2 className="font-bold py-2"> "{title}"</h2>
                     <p className="text-light text-gray-500 py-2">Medium: {medium}</p>
                     <p className="text-light text-gray-500 py-2"> Size: {size}</p>

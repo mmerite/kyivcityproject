@@ -16,7 +16,7 @@ export default function SketchGrid() {
     }
 
     return (
-    <div className="w-full grid grid-cols-4 gap-2">
+    <div className="w-full columns-4 gap-8 items-start">
         {sketches.map((sketch, index) => (
         <SketchItem key={index} sketch={sketch} />
         ))}

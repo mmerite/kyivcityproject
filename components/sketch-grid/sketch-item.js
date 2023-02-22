@@ -18,10 +18,10 @@ export default function SketchItem({sketch}) {
     }
 
     return (
-        <div className="border rounded-lg px-4 py-2">
+        <div className="border rounded-lg px-4 py-2 hover:px-6">
             <div className="h-5/6 h-96 rounded">
                 <Link href={`/single-sketch/${sketch.id}`} className="text-md font-medium">
-                <span><img src={sketch.img_url} className="h-4/6 object-contain rounded mb-4"></img> {sketch.title} </span>
+                    <span><img src={sketch.img_url} className="h-4/6 object-contain rounded mb-4"></img> {sketch.title} </span>
                 </Link>
                 <p className="font-light text-sm text-gray-700">{sketch.medium}</p>
                 <p className="font-light italic text-sm text-gray-700">{sketch.size}</p>

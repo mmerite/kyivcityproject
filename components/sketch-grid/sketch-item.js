@@ -17,7 +17,7 @@ export default function SketchItem({sketch}) {
     }
 
     return (
-        <div className="border rounded-lg p-4">
+        <div className="border break-inside-avoid-column rounded-lg p-4">
             
             <Link href={`/single-sketch/${sketch.id}`} className="text-md font-medium">
                <span><img src={sketch.img_url} className="rounded"></img> {sketch.title} </span>

@@ -16,10 +16,12 @@ export default function SketchGrid() {
     }
 
     return (
-    <div className="w-full columns-4 gap-8 items-start">
-        {sketches.map((sketch, index) => (
-        <SketchItem key={index} sketch={sketch} />
-        ))}
-    </div>
+        <div className="flex flex-wrap"> 
+            <div className="w-full grid grid-cols-4 gap-8">
+                {sketches.map((sketch, index) => (
+                <SketchItem key={index} sketch={sketch} />
+                ))}
+            </div>
+        </div>
     );
 }
